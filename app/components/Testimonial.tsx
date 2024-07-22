@@ -15,8 +15,7 @@ const Testimonials = () => {
 
     return (
         <div style={{ padding: '20px', border: '1px solid' }} className="text-black text-center">
-            <h2 className="text-3xl underline">Testimonials</h2>
-            <br />
+            {/* <h2 className="text-3xl underline">Testimonials</h2> */}
             <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }} >
                 {testimonialsData.map((testimonial) => (
                     <div 
