@@ -4,6 +4,7 @@ import Testimonials from '@/app/components/Testimonial';
 import AboutUs from '@/app/components/AboutUs';
 
 const Home = () => {
+    const [toggle, setToggle] = useState(false);
     const [sections, setSections] = useState([
         { id: 'testimonials', content: <Testimonials /> },
         { id: 'aboutUs', content: <AboutUs /> },
@@ -33,6 +34,10 @@ const Home = () => {
         if (!isDraggable) return;
         event.preventDefault();
     };
+
+    // const handleToggle = () => {
+    //     setToggle((toggle)=>!toggle);
+    // };
 
     return (
         <div>
